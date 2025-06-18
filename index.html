@@ -1,31 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Buddy – Music Recommender</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>🎧 Meet Your Music Buddy</h1>
-      <p class="tagline">Just tell me 5 songs you love. I’ll find you 5 new ones from a different vibe.</p>
-      <p class="subtitle">No categories. No assumptions. Just music that fits *you*.</p>
-    </header>
+1  <!DOCTYPE html>
+2  <html lang="en">
+3  <head>
+4    <meta charset="UTF-8" />
+5    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+6    <title>AI Buddy – Music Recommender</title>
+7    <link rel="stylesheet" href="style.css" />
+8  </head>
+9  <body>
+10   <div class="container">
 
-    <form id="song-form">
-      <label for="songs">Enter 5 songs you love:</label>
-      <textarea id="songs" name="songs" rows="6" placeholder="1. ...\n2. ...\n3. ...\n4. ...\n5. ..."></textarea>
-      <button type="submit">Get Recommendations</button>
-    </form>
+11     <!-- HEADER START -->
+12     <header>
+13       <h1>🎧 Meet Your Music Buddy</h1>
+14       <p class="tagline">Tell me 5 songs you love. I’ll find you 5 new ones from a different vibe.</p>
+15       <p class="subtitle">No categories. No assumptions. Just music that fits <em>you</em>.</p>
+16     </header>
+17     <!-- HEADER END -->
 
-    <div id="results">
-      <h2>🎶 You Might Love...</h2>
-      <ul id="recommendations"></ul>
-    </div>
-  </div>
+18     <!-- GENDERMAG TOGGLE -->
+19     <div class="info-toggle">
+20       <button id="info-btn">?</button>
+21       <div id="info-box" class="hidden">
+22         <p>
+23           This prototype is designed to encourage inclusive exploration.<br />
+24           Inspired by the <a href="https://gendermag.org" target="_blank">GenderMag Project</a>,
+25           it supports different problem-solving styles, motivations, and comfort levels with technology.
+26         </p>
+27       </div>
+28     </div>
+29     <!-- TOGGLE END -->
 
-  <script src="script.js"></script>
-</body>
-</html>
+30     <!-- FORM START -->
+31     <form id="song-form">
+32       <label for="songs">Enter 5 songs you love:</label>
+33       <textarea id="songs" name="songs" rows="6" placeholder="1. ...&#10;2. ...&#10;3. ...&#10;4. ...&#10;5. ..."></textarea>
+34       <button type="submit">Get Recommendations</button>
+35     </form>
+36     <!-- FORM END -->
+
+37     <!-- RESULTS START -->
+38     <div id="results">
+39       <h2>🎶 You Might Love...</h2>
+40       <ul id="recommendations"></ul>
+41     </div>
+42     <!-- RESULTS END -->
+
+43   </div> <!-- END container -->
+44   <script src="script.js"></script>
+45 </body>
+46 </html>
+

@@ -1,0 +1,128 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5f6f8;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* Header */
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline, .subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+.subtitle em {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form */
+form {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #005ecb;
+}
+
+/* Results */
+#results h2 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+#recommendations {
+  list-style: none;
+  padding-left: 0;
+}
+
+#recommendations li {
+  background: #f0f0f0;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
+/* GenderMag Toggle */
+.info-toggle {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+#info-btn {
+  background-color: #eee;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#info-box {
+  background-color: #fdf6e3;
+  border-left: 4px solid #f39c12;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}

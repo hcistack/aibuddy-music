@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Buddy – Music Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎧 Meet Your Music Buddy</h1>
+      <p class="tagline">Just tell me 5 songs you love. I’ll find you 5 new ones from a different vibe.</p>
+      <p class="subtitle">No categories. No assumptions. Just music that fits *you*.</p>
+    </header>
+
+    <form id="song-form">
+      <label for="songs">Enter 5 songs you love:</label>
+      <textarea id="songs" name="songs" rows="6" placeholder="1. ...\n2. ...\n3. ...\n4. ...\n5. ..."></textarea>
+      <button type="submit">Get Recommendations</button>
+    </form>
+
+    <div id="results">
+      <h2>🎶 You Might Love...</h2>
+      <ul id="recommendations"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
